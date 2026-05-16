@@ -109,6 +109,14 @@ export default function Home() {
             {theme === "dark" ? <Sun /> : <Moon />}
           </Button>
           <CreditConfigSheet config={config} onSave={setConfig} />
+          <a href="https://cafecito.app/fertavora" rel="noopener" target="_blank" aria-label="Invitame un café">
+            <img
+              srcSet="https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x"
+              src="https://cdn.cafecito.app/imgs/buttons/button_1.png"
+              alt="Invitame un café en cafecito.app"
+              className="h-8 w-auto"
+            />
+          </a>
         </div>
       </header>
 
@@ -171,7 +179,7 @@ export default function Home() {
         </TabsContent>
       </Tabs>
 
-      <footer className="text-xs text-muted-foreground pt-4 border-t flex flex-col sm:flex-row sm:justify-between gap-1">
+      <footer className="text-xs text-muted-foreground pt-4 border-t flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <span>
           Fuente:{" "}
           <a className="underline" href="https://api.bcra.gob.ar" target="_blank" rel="noreferrer">
@@ -179,9 +187,19 @@ export default function Home() {
           </a>
           . Cálculo: sistema francés en UVAs. Las proyecciones son estimaciones, no asesoramiento financiero.
         </span>
-        <a href="/ayuda" className="underline whitespace-nowrap">
-          Ayuda y privacidad →
-        </a>
+        <div className="flex items-center gap-4 shrink-0">
+          <a href="/ayuda" className="underline whitespace-nowrap">
+            Ayuda y privacidad →
+          </a>
+          <a href="https://cafecito.app/fertavora" rel="noopener" target="_blank">
+            <img
+              srcSet="https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x"
+              src="https://cdn.cafecito.app/imgs/buttons/button_1.png"
+              alt="Invitame un café en cafecito.app"
+              className="h-8 w-auto"
+            />
+          </a>
+        </div>
       </footer>
     </div>
     </>
